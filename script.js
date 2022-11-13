@@ -13,6 +13,8 @@ document.getElementById("navmenu").innerHTML = navHTML;
 document.getElementById("navmenu-small").innerHTML = navHTML;
 
 // Setting the directory text
+
+/*
 var url = window.location.href;
 var pageName = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
 
@@ -33,3 +35,4 @@ if (dirEnd != -1)
 
 if (pageName != "index")
 	dir.innerHTML += "<a href=\"./" + pageName + ".html\">" + pageName + "</a>/";
+*/

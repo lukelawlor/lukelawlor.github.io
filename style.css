@@ -23,6 +23,10 @@ ul{
 p{
 	padding-bottom: 10px;
 }
+h1{
+	font-size: 24px;
+	font-weight: normal;
+}
 #wrapper{
 	max-width: 840px;
 	padding: 20px;
@@ -33,26 +37,23 @@ p{
 	text-align: center;
 	font-size: 30px;
 }
-#directory{
-
-}
-#directory-text{
-	display: inline-block;
-}
 #navmenu{
-	border: var(--def-border);
-}
-#navmenu embed{
-	max-width: 120px;
-}
-#content{
-	border: var(--def-border);
+	min-width: 110px;
 }
 #wrapper table td{
 	vertical-align: top;
 }
 #td-navmenu{
 	border-right: 10px solid transparent;
+}
+#td-navmenu-small{
+	display: none;
+	width: 100%;
+	border-bottom: 10px solid transparent;
+}
+@media only screen and (max-width: 600px){
+	#td-navmenu{display: none;}
+	#td-navmenu-small{display: block !important;}
 }
 #td-content{
 	width: 100%;
@@ -61,6 +62,10 @@ p{
 	padding-top: 20px;
 	text-align: right;
 }
+.center{
+	text-align: center;
+}
 .box{
+	border: var(--def-border);
 	padding: 5px;
 }

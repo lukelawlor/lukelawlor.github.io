@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../img/misc/ness.png">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="topics.css">
+	<title>CGD Topics</title>
+	<style>
+		#cgd img{
+			max-width: 80px;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="title"></div>
+		<div id="directory"></div>
+		<table>
+		<tr>
+			<td id="td-navmenu-small">
+				<div id="navmenu-small" class="box">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td id="td-navmenu">
+				<div id="navmenu" class="box">
+				</div>
+			</td>
+			<td id="td-content">
+				<div id="content" class="box">
+					<div id="cgd" class="center">
+						<h1>C/C++ Programming Game Developers Group</h1>
+						<img src="../img/cgd/c.svg">
+						<img src="../img/cgd/cpp.svg">
+						<img src="../img/cgd/sdl.svg">
+						<p>Here's what I'll be willing to teach you/go over with you throughout the year and the relative order in which we'll be learning things.</p>
+					</div>
+					<p>Topic with links will link to the meeting notes that cover the topics, if there are any.</p>
+					<div class="topics">
+					<h2>The Unix Command Line</h2>
+					<ul>
+						<li>Accessing the command line on Linux, Windows, or Mac</li>
+						<li>Basic commands <b>ls, cd, mkdir, rm</b></li>
+					</ul>
+					<h2>Optional Command Line Topics</h2>
+					<ul>
+						<li>Using a terminal text editor <b>nano, vim</b></li>
+						<li>Infiles, outfiles, and piping <b>&lt; &gt; | </b></li>
+						<li>Shell scripting <b>script.sh</b></li>
+					</ul>
+					<h2>C Programming</h2>
+					<ul>
+						<li>Writing Hello World</li>
+						<li>Compiling &amp; Running Hello World <b>gcc, ./a.out</b></li>
+						<li>Variables <b>int x;</b></li>
+						<li>Basic Input &amp; Output <b>printf, scanf</b></li>
+						<li>Macros <b>#define X</b></li>
+						<li>Operators &amp; Expressions <b>+ - / * ++ -- +=</b></li>
+						<li>Functions <b>void func_name(void);</b></li>
+						<li>Function Macros <b>#define	F(X)	X</b></li>
+						<li>Control Flow <b>if, else, while, for, goto, switch</b></li>
+						<li>Scope and Duration <b>{}, static</b></li>
+						<li>Data Types <b>unsigned, const, char, short, long, float, double</b></li>
+						<li>Using multiple .c and .h files <b>extern, static, #include</b></li>
+						<li>Compound Data Types <b>struct, union, enum, typedef</b></li>
+						<li>Pointers <b>int *ptr = &x;</b></li>
+						<li>Arrays <b>int arr[x];</b></li>
+						<li>Multi-dimensional Arrays <b>int arr[x][y];</b></li>
+						<li>Standard Input &amp; Output <b>stdin, stdout</b></li>
+						<li>Error Handling <b>stderr, exit</b></li>
+						<li>Dynamic memory management <b>malloc, calloc, free</b></li>
+					</ul>
+					<h2>Optional C Programming Topics</h2>
+					<ul>
+						<li>Reading and Writing TEXT Files <b>fopen, fprintf, fscanf, fclose</b></li>
+						<li>Reading and Writing BINARY Files <b>fread, fwrite</b></li>
+						<li>Bitwise Operators &amp; Bit Flags <b>| &amp; ~</b></li>
+					</ul>
+					<h2>Using Libraries in C/C++</h2>
+					<ul>
+						<li>Header Files <b>#include &lt;header.h&gt;</b></li>
+						<li>Linking <b>gcc ... -lLIBRARY_NAME</b></li>
+					</ul>
+					<h2>Using SDL (easy stuff honestly once you know C)</h2>
+					<ul>
+						<li>Creating a window <b>SDL_Window</b></li>
+						<li>Rendering points and rectangles <b>SDL_Renderer, SDL_Rect</b></li>
+						<li>Loading and rendering images <b>SDL_Surface, SDL_Texture, SDL_RenderCopy</b></li>
+						<li>Handling user input <b>SDL_Event</b></li>
+						<ul>
+							<li>Keyboard events</li>
+							<li>Mouse events</li>
+							<li>Gamepad events</li>
+						</ul>
+						<li>Playing sound effects <b>Mix_Chunk</b></li>
+						<li>Playing music <b>Mix_Music</b></li>
+					</ul>
+					<h2>Optional SDL Topics</h2>
+					<ul>
+						<li>Using sprite fonts</li>
+						<li>Using TTF fonts <b>SDL_ttf</b></li>
+					</ul>
+					<h2>General Game Programming (technically language independent, but of course I'll be showing you it in C)</h2>
+					<ul>
+						<li>Game loop(s)</li>
+						<li>Basic entity system</li>
+
+						<li>Creating a player</li>
+						<li>Creating enemies</li>
+						<li>Collision with projectiles</li>
+						<li>Basic tile system</li>
+						<li>Tile map &amp; editor</li>
+						<li>Title screens</li>
+						<li>Credits scrolls</li>
+						<li>Dialogue system</li>
+						<li>Cutscene system</li>
+						<li>Saving &amp; loading maps</li>
+						<li>Saving &amp; loading games</li>
+					</ul>
+					<h2>C++ Programming (optional, builds on C, also I don't know a ton atm)</h2>
+					<ul>
+						<li>Differences between C and C++</li>
+						<li>Namespaces <b>namespace name{}</b></li>
+						<li>Using directives <b>using namespace name; using type = alias;</b></li>
+						<li>Standard Input &amp; Output <b>iostream, cout, cin, cerr</b></li>
+						<li>Casting <b>static_cast, const_cast, reinterpret_cast</b></li>
+						<li>Constants <b>constexpr, consteval, inline</b></li>
+						<li>Templates <b>template &lt;typename T&gt;</b></li>
+						<li>Classes <b>class, struct, public, private, protected</b></li>
+						<li>Constructors and Destructors <b>class_name(), ~class_name()</b></li>
+						<li>Inheritance <b>class x : public y</b></li>
+						<li>Virtual functions <b>virtual void func();</b></li>
+						<li>Pure virtual functions <b>virtual void func() = 0;</b></li>
+					</ul>
+					</div>
+				</div>
+			</td>
+		</tr>
+		</table>
+		<div id="footer">
+			<p>2022 year of the gamer</p>
+			<img src="../img/misc/stick.gif">
+		</div>
+	</div>
+	<script src="../script.js"></script>
+</body>
+</html>

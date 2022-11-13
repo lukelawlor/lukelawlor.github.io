@@ -1,12 +1,15 @@
 :root{
 	--def-border: 1px dotted #b58900;
+	--col-red: #dc322f;
+	--col-green: #2aa198;
+	--col-blue: #0066aa;
 }
 a{
-	color: #2aa198;
+	color: var(--col-green);
 	text-decoration: none;
 }
 a:hover{
-	color: #dc322f;
+	color: var(--col-red);
 }
 *{
 	margin: 0;
@@ -14,7 +17,7 @@ a:hover{
 }
 body{
 	background-color: #fdf6e3;
-	color: #0066aa;
+	color: var(--col-blue);
 	font-family: 'Times New Roman', serif;
 }
 ul{
@@ -25,7 +28,15 @@ p{
 }
 h1{
 	font-size: 24px;
-	font-weight: normal;
+	font-weight: bold;
+}
+h2{
+	font-size: 18px;
+	font-weight: bold;
+}
+hr{
+	border: 0px;
+	height: 40px;
 }
 #wrapper{
 	max-width: 840px;
@@ -36,6 +47,7 @@ h1{
 	border-bottom: var(--def-border);
 	text-align: center;
 	font-size: 30px;
+	font-weight: bold;
 }
 #navmenu{
 	min-width: 110px;

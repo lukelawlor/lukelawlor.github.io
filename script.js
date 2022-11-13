@@ -13,4 +13,23 @@ document.getElementById("navmenu").innerHTML = navHTML;
 document.getElementById("navmenu-small").innerHTML = navHTML;
 
 // Setting the directory text
-dir.innerHTML += "a";
+var url = window.location.href;
+var pageName = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
+
+if (window.location.href.length - pathStart > 2)
+	exit(0);
+
+var siteUrl = "lukelawlor.github.io"
+var pathStart = url.indexOf(siteUrl) + siteUrl.length + 1;
+
+var dirStart = pathStart;
+var dirEnd = url.indexOf("/", dirStart);
+
+if (dirEnd != -1)
+{
+	var dirName = url.substring(dirStart, dirEnd);
+	dir.innerHTML += "<a href=\"/" + dirName + "/index.html\">" + dirName + "</a>/";
+}
+
+if (pageName != "index")
+	dir.innerHTML += "<a href=\"./" + pageName + ".html\">" + pageName + "</a>/";

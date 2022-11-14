@@ -15,7 +15,7 @@ document.getElementById("navmenu-small").innerHTML = navHTML;
 // Setting the directory text
 var dirList = [];
 
-var url = window.location.href;
+var url = 'https://lukelawlor.github.io/';
 
 var siteUrl = 'lukelawlor.github.io'
 var pathStart = url.indexOf(siteUrl) + siteUrl.length + 1;
@@ -39,9 +39,6 @@ for (var i = 0; i < dirList.length; i++)
 	dir.innerHTML += '<a href="' + href + '">' + dirList[i] + '</a>/';
 }
 
-if (url.lastIndexOf('/') > url.indexOf(siteUrl))
-{
-	var pageName = url.substring(url.lastIndexOf('/') + 1, url.length);
-	if (pageName != 'index.html')
-		dir.innerHTML += '<a href="./' + pageName + '">' + pageName.substring(0, pageName.indexOf('.')) + '</a>/';
-}
+var pageName = url.substring(url.lastIndexOf('/') + 1, url.length);
+if (pageName != '' pageName != 'index.html')
+	dir.innerHTML += '<a href="./' + pageName + '">' + pageName.substring(0, pageName.indexOf('.')) + '</a>/';

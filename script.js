@@ -40,5 +40,5 @@ for (var i = 0; i < dirList.length; i++)
 }
 
 var pageName = url.substring(url.lastIndexOf('/') + 1, url.length);
-if (pageName != '' pageName != 'index.html')
+if (pageName != '' && pageName != 'index.html')
 	dir.innerHTML += '<a href="./' + pageName + '">' + pageName.substring(0, pageName.indexOf('.')) + '</a>/';

@@ -13,26 +13,32 @@ document.getElementById("navmenu").innerHTML = navHTML;
 document.getElementById("navmenu-small").innerHTML = navHTML;
 
 // Setting the directory text
+var dirList = [];
 
-/*
 var url = window.location.href;
-var pageName = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
+var pageName = url.substring(url.lastIndexOf('/') + 1, url.length);
 
-if (window.location.href.length - pathStart > 2)
-	exit(0);
-
-var siteUrl = "lukelawlor.github.io"
+var siteUrl = 'lukelawlor.github.io'
 var pathStart = url.indexOf(siteUrl) + siteUrl.length + 1;
 
 var dirStart = pathStart;
-var dirEnd = url.indexOf("/", dirStart);
+var dirEnd = url.indexOf('/', dirStart);
 
-if (dirEnd != -1)
+while (dirEnd != -1)
 {
-	var dirName = url.substring(dirStart, dirEnd);
-	dir.innerHTML += "<a href=\"/" + dirName + "/index.html\">" + dirName + "</a>/";
+	dirList.push(url.substring(dirStart, dirEnd));
+	dirStart = dirEnd + 1;
+	dirEnd = url.indexOf('/', dirStart);
 }
 
-if (pageName != "index")
-	dir.innerHTML += "<a href=\"./" + pageName + ".html\">" + pageName + "</a>/";
-*/
+for (var i = 0; i < dirList.length; i++)
+{
+	var href = '';
+	for (var j = 0; j < dirList.length - i - 1; j++)
+		href += '../';
+	href += 'index.html';
+	dir.innerHTML += '<a href="' + href + '">' + dirList[i] + '</a>/';
+}
+
+if (pageName != 'index.html')
+	dir.innerHTML += '<a href="./' + pageName + '">' + pageName.substring(0, pageName.indexOf('.')) + '</a>/';

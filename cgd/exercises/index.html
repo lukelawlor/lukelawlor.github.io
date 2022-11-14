@@ -44,7 +44,7 @@
 					<p>
 						<a href="javascript:showSolution('1a.c');">[show solution]</a>
 						<a href="1a.c">[download source file]</a>
-						<code id="cgde-1a.c"></code>
+						<p><code id="cgde-1a.c"></code></p>
 					</p>
 					<hr>
 
@@ -57,7 +57,7 @@
 					<p>
 						<a href="javascript:showSolution('1b.c');">[show solution]</a>
 						<a href="1b.c">[download source file]</a>
-						<code id="cgde-1b.c"></code>
+						<p><code id="cgde-1b.c"></code></p>
 					</p>
 					<hr>
 
@@ -69,6 +69,11 @@
 						<li>function macros</li>
 						<li>operators and expressions</li>
 					</ul>
+					<p>
+						<a href="javascript:showSolution('1c.c');">[show solution]</a>
+						<a href="1c.c">[download source file]</a>
+						<code id="cgde-1c.c"></code>
+					</p>
 					<hr>
 
 					<p>1d: Write a program with a function macro PRINTD that prints a variable's name and value. Print out the values of 3 variables with it.</p>
@@ -76,6 +81,11 @@
 						<li>printf</li>
 						<li>function macros</li>
 					</ul>
+					<p>
+						<a href="javascript:showSolution('1d.c');">[show solution]</a>
+						<a href="1d.c">[download source file]</a>
+						<code id="cgde-1d.c"></code>
+					</p>
 					<hr>
 
 					<p>1e: Write a function that repeatedly prints a number a certain amount of times. The function header should be: void print_num_rep(int num, int rep);</p>
@@ -85,6 +95,11 @@
 						<li>macros</li>
 						<li>operators and expressions</li>
 					</ul>
+					<p>
+						<a href="javascript:showSolution('1e.c');">[show solution]</a>
+						<a href="1e.c">[download source file]</a>
+						<code id="cgde-1e.c"></code>
+					</p>
 					<hr>
 
 					<p>1f: Write a program that will print "HI" if the PRINTHI macro is defined during compilation and print "HELLO" otherwise.</p>
@@ -92,6 +107,11 @@
 						<li>printf</li>
 						<li>macros</li>
 					</ul>
+					<p>
+						<a href="javascript:showSolution('1f.c');">[show solution]</a>
+						<a href="1f.c">[download source file]</a>
+						<code id="cgde-1f.c"></code>
+					</p>
 					<hr>
 
 					<p>1g: Write a function that will repeatedly print "Call" on the same line the same number of times that it has been called in the program so far.</p>
@@ -102,6 +122,11 @@
 						<li>local static variables</li>
 						<li>operators and expressions</li>
 					</ul>
+					<p>
+						<a href="javascript:showSolution('1g.c');">[show solution]</a>
+						<a href="1g.c">[download source file]</a>
+						<code id="cgde-1g.c"></code>
+					</p>
 					<hr>
 
 				</div>
@@ -116,10 +141,12 @@
 <script>
 function showSolution(id)
 {
-	var eCode = document.getElementById("cgde-" + id);
+	var eCode = document.getElementById('cgde-' + id);
 	var client = new XMLHttpRequest();
-	client.open("GET", id);
+	client.open('GET', id);
 	client.onreadystatechange = function() {
+		this.responseText.replace('\n', '<br>');
+		this.responseText.replace('\t', '&emsp;');
 		eCode.innerHTML = this.responseText;
 	}
 	client.send();

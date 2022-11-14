@@ -4,21 +4,23 @@
 	--col-green: #2aa198;
 	--col-blue: #0066aa;
 }
-a{
-	color: var(--col-green);
-	text-decoration: none;
-}
-a:hover{
-	color: var(--col-red);
+html{
+	background-color: #fdf6e3;
 }
 *{
 	margin: 0;
 	padding: 0;
 }
 body{
-	background-color: #fdf6e3;
 	color: var(--col-blue);
 	font-family: 'Times New Roman', serif;
+}
+a{
+	color: var(--col-green);
+	text-decoration: none;
+}
+a:hover{
+	color: var(--col-red);
 }
 ul{
 	padding-left: 14px;

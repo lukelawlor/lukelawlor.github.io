@@ -6,9 +6,8 @@
 	<link rel="stylesheet" href="../../style.css">
 	<title>CGD Exercises</title>
 	<style>
-		#cgd img{
-			max-width: 80px;
-			padding: 20px;
+		#content ul{
+			padding-bottom: 10px;
 		}
 	</style>
 </head>
@@ -32,8 +31,79 @@
 				<div id="content" class="box">
 					<div id="cgd" class="center">
 						<h1>C Exercises</h1>
+						<p>Here you will find exercises followed by a list of things they require an understanding of. It's a good idea to write comments for your solutions just to get into the habit of commenting things.</p>
 					</div>
-					<p>Under construction</p>
+					<h2>Set #1 - Nov 13, 2022</h2>
+					<p>1a: Write a program that uses scanf to get the value of a circle's radius from the user. With this value, print out what the circumference of the circle is, using a macro for pi.</p>
+					<ul>
+						<li>printf</li>
+						<li>scanf</li>
+						<li>macros</li>
+						<li>operators and expressions</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('1a.c');">[show solution]</a>
+						<a href="1a.c">[download source file]</a>
+						<code id="cgde-1a.c"></code>
+					</p>
+					<hr>
+
+					<p>1b: Write a program that prints out a text art right triangle in the terminal with nested for loops. The width and height of the triangle should be 10 units.</p>
+					<ul>
+						<li>printf</li>
+						<li>control flow</li>
+						<li>operators and expressions</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('1b.c');">[show solution]</a>
+						<a href="1b.c">[download source file]</a>
+						<code id="cgde-1b.c"></code>
+					</p>
+					<hr>
+
+					<p>1c: Write a function that returns true if a number passed to it is prime and false if it isn't. Then write a program that uses this function to print out all of the numbers from 1-100 that are prime. For fake bonus points, write a function test(num) that will print whether or not num is prime. For even more fake points, write a function macro variant of this function.</p>
+					<ul>
+						<li>printf</li>
+						<li>control flow</li>
+						<li>functions</li>
+						<li>function macros</li>
+						<li>operators and expressions</li>
+					</ul>
+					<hr>
+
+					<p>1d: Write a program with a function macro PRINTD that prints a variable's name and value. Print out the values of 3 variables with it.</p>
+					<ul>
+						<li>printf</li>
+						<li>function macros</li>
+					</ul>
+					<hr>
+
+					<p>1e: Write a function that repeatedly prints a number a certain amount of times. The function header should be: void print_num_rep(int num, int rep);</p>
+					<ul>
+						<li>printf</li>
+						<li>scanf</li>
+						<li>macros</li>
+						<li>operators and expressions</li>
+					</ul>
+					<hr>
+
+					<p>1f: Write a program that will print "HI" if the PRINTHI macro is defined during compilation and print "HELLO" otherwise.</p>
+					<ul>
+						<li>printf</li>
+						<li>macros</li>
+					</ul>
+					<hr>
+
+					<p>1g: Write a function that will repeatedly print "Call" on the same line the same number of times that it has been called in the program so far.</p>
+					<ul>
+						<li>printf</li>
+						<li>functions</li>
+						<li>control flow</li>
+						<li>local static variables</li>
+						<li>operators and expressions</li>
+					</ul>
+					<hr>
+
 				</div>
 			</td>
 		</tr>
@@ -43,5 +113,17 @@
 		</div>
 	</div>
 	<script src="../../script.js"></script>
+<script>
+function showSolution(id)
+{
+	var eCode = document.getElementById("cgde-" + id);
+	var client = new XMLHttpRequest();
+	client.open("GET", id);
+	client.onreadystatechange = function() {
+		eCode.innerHTML = this.responseText;
+	}
+	client.send();
+}
+</script>
 </body>
 </html>

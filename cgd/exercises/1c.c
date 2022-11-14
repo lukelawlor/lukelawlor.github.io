@@ -1,21 +1,13 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Test macro that prints whether or not the number passed is prime
-#define	TEST(num)	if (is_prime(num)) \
-				printf("The number " #num " is prime!\n"); \
-			else \
-				printf("The number " #num " is not prime... lame...\n")
-
 bool is_prime(int num);
 void test(int num);
 
 int main(void)
 {
-	// Tests
-	TEST(4);
-	TEST(9);
-	TEST(3);
+	for (int i = 1; i <= 100; i++)
+		test(i);
 
 	return 0;
 }

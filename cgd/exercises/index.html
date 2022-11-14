@@ -152,8 +152,10 @@
 	</div>
 	<script src="../../script.js"></script>
 <script>
+// Shows the solution to an exercise by setting the text of the exercise's source file to the exercise's matching textarea value
 function showSolution(id)
 {
+	// Get textarea to show code in
 	var eCode = document.getElementById('cgde-' + id);
 	if (eCode.style.display != 'block')
 	{
@@ -161,16 +163,12 @@ function showSolution(id)
 		var client = new XMLHttpRequest();
 		client.open('GET', id);
 		client.onreadystatechange = function() {
-			this.responseText.replace('\n', '<br>');
-			this.responseText.replace('\t', '&emsp;');
 			eCode.value = this.responseText;
 		}
 		client.send();
 	}
 	else
-	{
 		eCode.style.display = 'none';
-	}
 }
 </script>
 </body>

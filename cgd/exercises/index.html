@@ -9,6 +9,18 @@
 		#content ul{
 			padding-bottom: 10px;
 		}
+		#content textarea{
+			border: 0px;
+			background-color: transparent;
+			font-family: 'Courier New', monospace;
+			color: var(--col-blue);
+			font-size: 14px;
+			font-weight: normal;
+			width: 100%;
+			outline: none;
+			resize: none;
+			display: none;
+		}
 	</style>
 </head>
 <body>
@@ -44,7 +56,7 @@
 					<p>
 						<a href="javascript:showSolution('1a.c');">[show solution]</a>
 						<a href="1a.c">[download source file]</a>
-						<p><code id="cgde-1a.c"></code></p>
+						<p><textarea id="cgde-1a.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -57,7 +69,7 @@
 					<p>
 						<a href="javascript:showSolution('1b.c');">[show solution]</a>
 						<a href="1b.c">[download source file]</a>
-						<p><code id="cgde-1b.c"></code></p>
+						<p><textarea id="cgde-1b.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -72,7 +84,7 @@
 					<p>
 						<a href="javascript:showSolution('1c.c');">[show solution]</a>
 						<a href="1c.c">[download source file]</a>
-						<code id="cgde-1c.c"></code>
+						<p><textarea id="cgde-1c.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -84,7 +96,7 @@
 					<p>
 						<a href="javascript:showSolution('1d.c');">[show solution]</a>
 						<a href="1d.c">[download source file]</a>
-						<code id="cgde-1d.c"></code>
+						<p><textarea id="cgde-1d.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -98,7 +110,7 @@
 					<p>
 						<a href="javascript:showSolution('1e.c');">[show solution]</a>
 						<a href="1e.c">[download source file]</a>
-						<code id="cgde-1e.c"></code>
+						<p><textarea id="cgde-1e.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -110,7 +122,7 @@
 					<p>
 						<a href="javascript:showSolution('1f.c');">[show solution]</a>
 						<a href="1f.c">[download source file]</a>
-						<code id="cgde-1f.c"></code>
+						<p><textarea id="cgde-1f.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -125,7 +137,7 @@
 					<p>
 						<a href="javascript:showSolution('1g.c');">[show solution]</a>
 						<a href="1g.c">[download source file]</a>
-						<code id="cgde-1g.c"></code>
+						<p><textarea id="cgde-1g.c"></textarea></p>
 					</p>
 					<hr>
 
@@ -142,12 +154,13 @@
 function showSolution(id)
 {
 	var eCode = document.getElementById('cgde-' + id);
+	eCode.style.display = 'block';
 	var client = new XMLHttpRequest();
 	client.open('GET', id);
 	client.onreadystatechange = function() {
 		this.responseText.replace('\n', '<br>');
 		this.responseText.replace('\t', '&emsp;');
-		eCode.innerHTML = this.responseText;
+		eCode.value = this.responseText;
 	}
 	client.send();
 }

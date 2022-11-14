@@ -16,7 +16,6 @@ document.getElementById("navmenu-small").innerHTML = navHTML;
 var dirList = [];
 
 var url = window.location.href;
-var pageName = url.substring(url.lastIndexOf('/') + 1, url.length);
 
 var siteUrl = 'lukelawlor.github.io'
 var pathStart = url.indexOf(siteUrl) + siteUrl.length + 1;
@@ -40,5 +39,9 @@ for (var i = 0; i < dirList.length; i++)
 	dir.innerHTML += '<a href="' + href + '">' + dirList[i] + '</a>/';
 }
 
-if (pageName != 'index.html')
-	dir.innerHTML += '<a href="./' + pageName + '">' + pageName.substring(0, pageName.indexOf('.')) + '</a>/';
+if (url.lastIndexOf('/') > url.indexOf(siteUrl))
+{
+	var pageName = url.substring(url.lastIndexOf('/') + 1, url.length);
+	if (pageName != 'index.html')
+		dir.innerHTML += '<a href="./' + pageName + '">' + pageName.substring(0, pageName.indexOf('.')) + '</a>/';
+}

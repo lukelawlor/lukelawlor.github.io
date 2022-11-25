@@ -14,7 +14,7 @@ html{
 body{
 	color: var(--col-blue);
 	font-family: 'Times New Roman', serif;
-	font-size: 13pt;
+	font-size: 12pt;
 }
 a{
 	color: var(--col-green);
@@ -24,17 +24,17 @@ a:hover{
 	color: var(--col-red);
 }
 ul{
-	padding-left: 14pt;
+	padding-left: 10pt;
 }
 p{
 	padding-bottom: 10pt;
 }
 h1{
-	font-size: 24pt;
+	font-size: 18pt;
 	font-weight: bold;
 }
 h2{
-	font-size: 18pt;
+	font-size: 14pt;
 	font-weight: bold;
 }
 hr{
@@ -42,18 +42,18 @@ hr{
 	height: 40pt;
 }
 #wrapper{
-	max-width: 840pt;
+	max-width: 630pt;
 	padding: 20pt;
 	margin: auto;
 }
 #title{
 	border-bottom: var(--def-border);
 	text-align: center;
-	font-size: 30pt;
+	font-size: 23pt;
 	font-weight: bold;
 }
 #navmenu{
-	min-width: 110pt;
+	min-width: 80pt;
 }
 #wrapper table td{
 	vertical-align: top;

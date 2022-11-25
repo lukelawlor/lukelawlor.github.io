@@ -142,6 +142,145 @@
 					</p>
 					<hr>
 
+					<h2>Set #2 - Nov 25, 2022</h2>
+					<p>2a: Write a header file named shapes.h that contains multiple structs we'll be using in other exercises for this set. It should contain the type definitions for point and rectangle structs. Be sure to include a header guard!</p>
+					<ul>
+						<li>header files</li>
+						<li>typedef</li>
+						<li>struct</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('shapes.h');">[show solution]</a>
+						<a href="shapes.h">[download shapes.h]</a>
+						<p><textarea spellcheck="false" id="cgde-shapes.h"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2b: Write a function that takes a pointer to an int as a parameter and changes the value that the pointer points to to 5. Test its functionality by printing out some values.</p>
+					<ul>
+						<li>functions</li>
+						<li>pointers</li>
+						<li>printf</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2b.c');">[show solution]</a>
+						<a href="2b.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-2b.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2c - Write a function that takes a void pointer as a parameter and prints out its memory address. Test its functionality by printing out some values. Remember that %p is the conversion specification for pointers.</p>
+					<ul>
+						<li>pointers</li>
+						<li>void pointers</li>
+						<li>functions</li>
+						<li>printf</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2c.c');">[show solution]</a>
+						<a href="2c.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-2c.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2d - Write a function that takes a pointer to a rectangle struct as a parameter and prints out all of its member variables (variables inside the struct). To get the type definition for rectangles, make sure you #include the header file shapes.h which we made in exercise 2a. Also, check 2a's solution to make sure shapes.h is correct at this point.</p>
+					<ul>
+						<li>pointers</li>
+						<li>struct</li>
+						<li>printf</li>
+						<li>functions</li>
+						<li>header files</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2d.c');">[show solution]</a>
+						<a href="2d.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-2d.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2e: Write a function that takes a pointer to a rectangle struct as a parameter and returns its area.</p>
+					<ul>
+						<li>pointers</li>
+						<li>struct</li>
+						<li>printf</li>
+						<li>functions</li>
+						<li>header files</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2e.c');">[show solution]</a>
+						<a href="2e.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-2e.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2f: Let's test out math.h from the C standard library. To use it, you must #include &lt;math.h&gt; in your source file and append "-lm" to your compile command to link it to the math library. Use the sqrt() function from math.h to compute the square root of a number, and then print it out.</p>
+					<p>For more info on math.h and other standard library headers, check out <a href="https://en.cppreference.com/w/c/numeric/math">cppreference.com</a>.</p>
+					<ul>
+						<li>header files</li>
+						<li>linking</li>
+						<li>printf</li>
+						<li>math.h</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2f.c');">[show solution]</a>
+						<a href="2f.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-2f.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2g: Write a function that returns the distance between two points. It should take two pointers to point structs as parameters and return a double. Test it by printing out some values. Remember to #include shapes.h from exercise 2a to get the type definition for point structs.</p>
+					<ul>
+						<li>printf</li>
+						<li>pointers</li>
+						<li>functions</li>
+						<li>header files</li>
+						<li>struct</li>
+						<li>math.h</li>
+						<li>linking</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2g.c');">[show solution]</a>
+						<a href="2g.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-2g.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2h: Write a program that prints out a char variable in the terminal using a pointer to that char. Then, it should move through memory using the pointer and print all of the characters it finds until it reaches a segfault. Hint: adding +1 to a char pointer will increase its memory address by 1.</p>
+					<ul>
+						<li>pointers</li>
+						<li>printf</li>
+						<li>control flow</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('1h.c');">[show solution]</a>
+						<a href="1h.c">[download source file]</a>
+						<p><textarea spellcheck="false" id="cgde-1h.c"></textarea></p>
+					</p>
+					<hr>
+
+					<p>2i: This exercise should help you practice using multiple c source files for a single program.</p>
+					<p>Combine the definitions of functions from exercises 2d, 2e, and 2g into a source file named shape_functions.c. Then, combine their function prototypes into a header file named shape_functions.h.</p>
+					<p>Finally, create a source file with a main function that utilizes all of these functions, named 2i.c. Compile your program by writing all of the source file names it uses in your compile command.</p>
+					<ul>
+						<li>header files</li>
+						<li>functions</li>
+						<li>function prototypes</li>
+						<li>linking</li>
+						<li>math.h</li>
+					</ul>
+					<p>
+						<a href="javascript:showSolution('2i.c');">[show 2i.c]</a>
+						<a href="javascript:showSolution('shape_functions.h');">[show shape_functions.h]</a>
+						<a href="javascript:showSolution('shape_functions.c');">[show shape_functions.c]</a>
+						<a href="2i.c">[download 2i.c]</a>
+						<a href="shape_functions.h">[download shape_functions.h]</a>
+						<a href="shape_functions.c">[download shape_functions.c]</a>
+						<p><textarea spellcheck="false" id="cgde-2i.c"></textarea></p>
+						<p><textarea spellcheck="false" id="cgde-shape_functions.h"></textarea></p>
+						<p><textarea spellcheck="false" id="cgde-shape_functions.c"></textarea></p>
+					</p>
+					<hr>
+
 				</div>
 			</td>
 		</tr>

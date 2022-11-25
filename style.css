@@ -14,6 +14,7 @@ html{
 body{
 	color: var(--col-blue);
 	font-family: 'Times New Roman', serif;
+	font-size: 13pt;
 }
 a{
 	color: var(--col-green);
@@ -23,49 +24,49 @@ a:hover{
 	color: var(--col-red);
 }
 ul{
-	padding-left: 14px;
+	padding-left: 14pt;
 }
 p{
-	padding-bottom: 10px;
+	padding-bottom: 10pt;
 }
 h1{
-	font-size: 24px;
+	font-size: 24pt;
 	font-weight: bold;
 }
 h2{
-	font-size: 18px;
+	font-size: 18pt;
 	font-weight: bold;
 }
 hr{
-	border: 0px;
-	height: 40px;
+	border: 0;
+	height: 40pt;
 }
 #wrapper{
-	max-width: 840px;
-	padding: 20px;
+	max-width: 840pt;
+	padding: 20pt;
 	margin: auto;
 }
 #title{
 	border-bottom: var(--def-border);
 	text-align: center;
-	font-size: 30px;
+	font-size: 30pt;
 	font-weight: bold;
 }
 #navmenu{
-	min-width: 110px;
+	min-width: 110pt;
 }
 #wrapper table td{
 	vertical-align: top;
 }
 #td-navmenu{
-	border-right: 10px solid transparent;
+	border-right: 10pt solid transparent;
 }
 #td-navmenu-small{
 	display: none;
 	width: 100%;
-	border-bottom: 10px solid transparent;
+	border-bottom: 10pt solid transparent;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600pt){
 	#td-navmenu{display: none;}
 	#td-navmenu-small{display: block !important;}
 }
@@ -76,7 +77,7 @@ hr{
 	max-width: 100%;
 }
 #footer{
-	padding-top: 20px;
+	padding-top: 20pt;
 	text-align: right;
 }
 .center{
@@ -84,5 +85,5 @@ hr{
 }
 .box{
 	border: var(--def-border);
-	padding: 5px;
+	padding: 5pt;
 }

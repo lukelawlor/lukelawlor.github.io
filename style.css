@@ -72,6 +72,9 @@ hr{
 #td-content{
 	width: 100%;
 }
+#td-content img{
+	max-width: 100%;
+}
 #footer{
 	padding-top: 20px;
 	text-align: right;

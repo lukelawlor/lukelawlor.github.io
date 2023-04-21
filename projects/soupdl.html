@@ -27,10 +27,13 @@
 					<div class="center">
 						<h1>SoupDL 06</h1>
 					</div>
-					<p><b>SoupDL 06</b> (stupid name I know) is a platformer and shooter game and engine I've been working on. It's written in C and uses SDL2's renderer for graphics.</p>
-					<hr>
+					<p><b>SoupDL 06</b> is a platformer and shooter game and engine I've been working on. It's written in C and uses SDL2's renderer for graphics.</p>
+					<p>You can play it right here on the site because emscripten exists.</p>
 					<div class="center">
+						<canvas id="canvas">Your browser does not support the HTML5 canvas.</canvas>
+						<!--
 						<img src="../img/projects/soupdl.png">
+						-->
 					</div>
 					<hr>
 					<p>Currently it features:</p>
@@ -38,6 +41,7 @@
 						<li>An ECS-like entity system</li>
 						<li>A tilemap system</li>
 						<li>A map editor</li>
+						<li>(insert more complicated stuff here)</li>
 					</ul>
 					<br/>
 					<p>This has been the most fun and ambitious project I've worked on so far.</p>
@@ -53,5 +57,34 @@
 		</div>
 	</div>
 	<script src="../script.js"></script>
+	<script type="text/javascript">
+		// Handle emiscripten events
+		var Module = {
+			canvas: (function() {
+				var canvas = document.getElementById('canvas');
+				return canvas;
+			})()
+		};
+		
+		// Fetch the static memory file 'soupdl.data'
+		(function() {
+			var memoryInitializer = 'soupdl.data';
+			if (typeof Module['locateFile'] === 'function') {
+				memoryInitializer = Module['locateFile'](memoryInitializer);
+			}
+			else if (Module['memoryInitializerPrefixURL']) {
+				memoryInitializer = Module['memoryInitializerPrefixURL'] + memoryInitializer;
+			}
+			var xhr = Module['memoryInitializerRequest'] = new XMLHttpRequest();
+			xhr.open('GET', memoryInitializer, true);
+			xhr.responseType = 'arraybuffer';
+			xhr.send(null);
+		})();
+		
+		// Load the main js file
+		var script = document.createElement('script');
+		script.src = 'soupdl.js';
+		document.body.appendChild(script);
+	</script>
 </body>
 </html>

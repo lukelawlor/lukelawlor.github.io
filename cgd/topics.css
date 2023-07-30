@@ -2,9 +2,8 @@
 	padding-bottom: 20px;
 }
 .topics b{
-	font-family: 'Courier New', monospace;
+	font-family: 'Courier';
 	float: right;
-	color: var(--col-red);
-	font-size: 14px;
+	color: var(--col-orange);
 	font-weight: normal;
 }

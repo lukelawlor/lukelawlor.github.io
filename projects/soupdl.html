@@ -2,61 +2,40 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" href="../img/misc/ness.png">
+	<link rel="icon" href="../img/misc/favicon.png">
 	<link rel="stylesheet" href="../style.css">
 	<title>SoupDL 06</title>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="title"></div>
-		<div id="directory"></div>
-		<table>
-		<tr>
-			<td id="td-navmenu-small">
-				<div id="navmenu-small" class="box">
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td id="td-navmenu">
-				<div id="navmenu" class="box">
-				</div>
-			</td>
-			<td id="td-content">
-				<div id="content" class="box">
-					<div class="center">
-						<h1>SoupDL 06</h1>
-					</div>
-					<p><b>SoupDL 06</b> is a platformer and shooter game and engine I've been working on. It's written in C and uses SDL2's renderer for graphics.</p>
-					<p>You can play it right here on the site because emscripten exists.</p>
-					<div class="center">
-						<canvas id="canvas">Your browser does not support the HTML5 canvas.</canvas>
-						<!--
-						<img src="../img/projects/soupdl.png">
-						-->
-					</div>
-					<hr>
-					<p>Currently it features:</p>
-					<ul>
-						<li>An ECS-like entity system</li>
-						<li>A tilemap system</li>
-						<li>A map editor</li>
-						<li>(insert more complicated stuff here)</li>
-					</ul>
-					<br/>
-					<p>This has been the most fun and ambitious project I've worked on so far.</p>
-					<p>
-						<a href="https://github.com/lukelawlor/soupdl">[view repo on github]</a>
-					</p>
-				</div>
-			</td>
-		</tr>
-		</table>
-		<div id="footer">
-			<img src="../img/misc/stick.gif">
-		</div>
+	<h1 class="center">SoupDL 06</h1>
+	<p><b>SoupDL 06</b> is a platformer and shooter game and engine I've been working on. It's written in C and uses SDL2's renderer for graphics.</p>
+	<p>You can play it right here on the site because emscripten exists.</p>
+	<div class="center">
+		<canvas id="canvas">Your browser does not support the HTML5 canvas.</canvas>
+		<!--
+		<img src="../img/projects/soupdl.png">
+		-->
 	</div>
+	<hr>
+	<p>Currently it features:</p>
+	<ul>
+		<li>An ECS-like entity system</li>
+		<li>A tilemap system</li>
+		<li>A map editor</li>
+		<li>(insert more complicated stuff here)</li>
+	</ul>
+	<br/>
+	<p>This has been the most fun and ambitious project I've worked on so far.</p>
+	<p>
+		<a href="https://github.com/lukelawlor/soupdl">[view repo on github]</a>
+	</p>
+
+	<div id="footer">
+		<img src="../img/misc/egg.png">
+	</div>
+
 	<script src="../script.js"></script>
+
 	<script type="text/javascript">
 		// Handle emiscripten events
 		var Module = {

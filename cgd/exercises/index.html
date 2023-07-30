@@ -2,17 +2,17 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" href="../../img/misc/ness.png">
+	<link rel="icon" href="../../img/misc/favicon.png">
 	<link rel="stylesheet" href="../../style.css">
-	<title>CGD Exercises</title>
+	<title>C Exercises</title>
 	<style>
 		#content ul{
 			padding-bottom: 10px;
 		}
 		#content textarea{
-			border: 0px;
+			border: var(--def-border);
 			background-color: transparent;
-			font-family: 'Courier New', monospace;
+			font-family: monospace;
 			color: var(--col-blue);
 			font-size: 14px;
 			font-weight: normal;
@@ -25,290 +25,265 @@
 	</style>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="title"></div>
-		<div id="directory"></div>
-		<table>
-		<tr>
-			<td id="td-navmenu-small">
-				<div id="navmenu-small" class="box">
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td id="td-navmenu">
-				<div id="navmenu" class="box">
-				</div>
-			</td>
-			<td id="td-content">
-				<div id="content" class="box">
-					<div id="cgd" class="center">
-						<h1>C Exercises</h1>
-						<p>Here you will find exercises followed by a list of things they require an understanding of. It's a good idea to write comments for your solutions just to get into the habit of commenting things.</p>
-					</div>
-					<h2>Set #1 - Nov 14, 2022</h2>
-					<p>1a: Write a program that uses scanf to get the value of a circle's radius from the user. With this value, print out what the circumference of the circle is, using a macro for pi.</p>
-					<ul>
-						<li>printf</li>
-						<li>scanf</li>
-						<li>macros</li>
-						<li>operators and expressions</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1a.c');">[show solution]</a>
-						<a href="1a.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1a.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>1b: Write a program that prints out a text art right triangle in the terminal with nested for loops. The width and height of the triangle should be 10 units.</p>
-					<ul>
-						<li>printf</li>
-						<li>control flow</li>
-						<li>operators and expressions</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1b.c');">[show solution]</a>
-						<a href="1b.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1b.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>1c: Write a function that returns true if a number passed to it is prime and false if it isn't. Then write a program that uses this function to print out all of the numbers from 1-100 that are prime.</p>
-					<ul>
-						<li>printf</li>
-						<li>control flow</li>
-						<li>functions</li>
-						<li>function macros</li>
-						<li>operators and expressions</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1c.c');">[show solution]</a>
-						<a href="1c.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1c.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>1d: Write a program with a function macro PRINTD that prints a variable's name and value. Print out the values of 3 variables with it.</p>
-					<ul>
-						<li>printf</li>
-						<li>function macros</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1d.c');">[show solution]</a>
-						<a href="1d.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1d.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>1e: Write a function that repeatedly prints a number a certain amount of times. The function header should be: void print_num_rep(int num, int rep);</p>
-					<ul>
-						<li>printf</li>
-						<li>scanf</li>
-						<li>macros</li>
-						<li>operators and expressions</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1e.c');">[show solution]</a>
-						<a href="1e.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1e.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>1f: Write a program that will print "HI" if the PRINTHI macro is defined during compilation and print "HELLO" otherwise.</p>
-					<ul>
-						<li>printf</li>
-						<li>macros</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1f.c');">[show solution]</a>
-						<a href="1f.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1f.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>1g: Write a function that will repeatedly print "Call" on the same line the same number of times that it has been called in the program so far.</p>
-					<ul>
-						<li>printf</li>
-						<li>functions</li>
-						<li>control flow</li>
-						<li>local static variables</li>
-						<li>operators and expressions</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('1g.c');">[show solution]</a>
-						<a href="1g.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-1g.c"></textarea></p>
-					</p>
-					<hr>
-
-					<h2>Set #2 - Nov 25, 2022</h2>
-					<p>2a: Write a header file named shapes.h that contains multiple structs we'll be using in other exercises for this set. It should contain the type definitions for point and rectangle structs. Be sure to include a header guard!</p>
-					<ul>
-						<li>header files</li>
-						<li>typedef</li>
-						<li>struct</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('shapes.h');">[show solution]</a>
-						<a href="shapes.h">[download shapes.h]</a>
-						<p><textarea spellcheck="false" id="cgde-shapes.h"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2b: Write a function that takes a pointer to an int as a parameter and changes the value that the pointer points to to 5. Test its functionality by printing out some values.</p>
-					<ul>
-						<li>functions</li>
-						<li>pointers</li>
-						<li>printf</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2b.c');">[show solution]</a>
-						<a href="2b.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2b.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2c - Write a function that takes a void pointer as a parameter and prints out its memory address. Test its functionality by printing out some values. Remember that %p is the conversion specification for pointers.</p>
-					<ul>
-						<li>pointers</li>
-						<li>void pointers</li>
-						<li>functions</li>
-						<li>printf</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2c.c');">[show solution]</a>
-						<a href="2c.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2c.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2d - Write a function that takes a pointer to a rectangle struct as a parameter and prints out all of its member variables (variables inside the struct). To get the type definition for rectangles, make sure you #include the header file shapes.h which we made in exercise 2a. Also, check 2a's solution to make sure shapes.h is correct at this point.</p>
-					<ul>
-						<li>pointers</li>
-						<li>struct</li>
-						<li>printf</li>
-						<li>functions</li>
-						<li>header files</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2d.c');">[show solution]</a>
-						<a href="2d.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2d.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2e: Write a function that takes a pointer to a rectangle struct as a parameter and returns its area.</p>
-					<ul>
-						<li>pointers</li>
-						<li>struct</li>
-						<li>printf</li>
-						<li>functions</li>
-						<li>header files</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2e.c');">[show solution]</a>
-						<a href="2e.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2e.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2f: Let's test out math.h from the C standard library. To use it, you must #include &lt;math.h&gt; in your source file and append "-lm" to your compile command to link it to the math library. Use the sqrt() function from math.h to compute the square root of a number, and then print it out.</p>
-					<p>For more info on math.h and other standard library headers, check out <a href="https://en.cppreference.com/w/c/numeric/math">cppreference.com</a>.</p>
-					<ul>
-						<li>header files</li>
-						<li>linking</li>
-						<li>printf</li>
-						<li>math.h</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2f.c');">[show solution]</a>
-						<a href="2f.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2f.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2g: Write a function that returns the distance between two points. It should take two pointers to point structs as parameters and return a double. Test it by printing out some values. Remember to #include shapes.h from exercise 2a to get the type definition for point structs.</p>
-					<ul>
-						<li>printf</li>
-						<li>pointers</li>
-						<li>functions</li>
-						<li>header files</li>
-						<li>struct</li>
-						<li>math.h</li>
-						<li>linking</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2g.c');">[show solution]</a>
-						<a href="2g.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2g.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2h: Write a program that prints out a char variable in the terminal using a pointer to that char. Then, it should move through memory using the pointer and print all of the characters it finds until it reaches a segfault. Hint: adding +1 to a char pointer will increase its memory address by 1.</p>
-					<ul>
-						<li>pointers</li>
-						<li>printf</li>
-						<li>control flow</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2h.c');">[show solution]</a>
-						<a href="2h.c">[download source file]</a>
-						<p><textarea spellcheck="false" id="cgde-2h.c"></textarea></p>
-					</p>
-					<hr>
-
-					<p>2i: This exercise should help you practice using multiple c source files for a single program.</p>
-					<p>Combine the definitions of functions from exercises 2d, 2e, and 2g into a source file named shape_functions.c. Then, combine their function prototypes into a header file named shape_functions.h.</p>
-					<p>Finally, create a source file with a main function that utilizes all of these functions, named 2i.c. Compile your program by writing all of the source file names it uses in your compile command.</p>
-					<ul>
-						<li>header files</li>
-						<li>functions</li>
-						<li>function prototypes</li>
-						<li>linking</li>
-						<li>math.h</li>
-					</ul>
-					<p>
-						<a href="javascript:showSolution('2i.c');">[show 2i.c]</a>
-						<a href="javascript:showSolution('shape_functions.h');">[show shape_functions.h]</a>
-						<a href="javascript:showSolution('shape_functions.c');">[show shape_functions.c]</a>
-						<a href="2i.c">[download 2i.c]</a>
-						<a href="shape_functions.h">[download shape_functions.h]</a>
-						<a href="shape_functions.c">[download shape_functions.c]</a>
-						<p><textarea spellcheck="false" id="cgde-2i.c"></textarea></p>
-						<p><textarea spellcheck="false" id="cgde-shape_functions.h"></textarea></p>
-						<p><textarea spellcheck="false" id="cgde-shape_functions.c"></textarea></p>
-					</p>
-					<hr>
-
-				</div>
-			</td>
-		</tr>
-		</table>
-		<div id="footer">
-			<img src="../../img/misc/stick.gif">
-		</div>
+	<div id="cgd" class="center">
+		<h1>C Exercises</h1>
+		<p>Here you will find exercises followed by a list of things they require an understanding of. It's a good idea to write comments for your solutions just to get into the habit of commenting things.</p>
 	</div>
+	<h2>Set #1 - Nov 14, 2022</h2>
+	<p>1a: Write a program that uses scanf to get the value of a circle's radius from the user. With this value, print out what the circumference of the circle is, using a macro for pi.</p>
+	<ul>
+		<li>printf</li>
+		<li>scanf</li>
+		<li>macros</li>
+		<li>operators and expressions</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1a.c');">[show solution]</a>
+		<a href="1a.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1a.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>1b: Write a program that prints out a text art right triangle in the terminal with nested for loops. The width and height of the triangle should be 10 units.</p>
+	<ul>
+		<li>printf</li>
+		<li>control flow</li>
+		<li>operators and expressions</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1b.c');">[show solution]</a>
+		<a href="1b.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1b.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>1c: Write a function that returns true if a number passed to it is prime and false if it isn't. Then write a program that uses this function to print out all of the numbers from 1-100 that are prime.</p>
+	<ul>
+		<li>printf</li>
+		<li>control flow</li>
+		<li>functions</li>
+		<li>function macros</li>
+		<li>operators and expressions</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1c.c');">[show solution]</a>
+		<a href="1c.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1c.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>1d: Write a program with a function macro PRINTD that prints a variable's name and value. Print out the values of 3 variables with it.</p>
+	<ul>
+		<li>printf</li>
+		<li>function macros</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1d.c');">[show solution]</a>
+		<a href="1d.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1d.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>1e: Write a function that repeatedly prints a number a certain amount of times. The function header should be: void print_num_rep(int num, int rep);</p>
+	<ul>
+		<li>printf</li>
+		<li>scanf</li>
+		<li>macros</li>
+		<li>operators and expressions</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1e.c');">[show solution]</a>
+		<a href="1e.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1e.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>1f: Write a program that will print "HI" if the PRINTHI macro is defined during compilation and print "HELLO" otherwise.</p>
+	<ul>
+		<li>printf</li>
+		<li>macros</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1f.c');">[show solution]</a>
+		<a href="1f.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1f.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>1g: Write a function that will repeatedly print "Call" on the same line the same number of times that it has been called in the program so far.</p>
+	<ul>
+		<li>printf</li>
+		<li>functions</li>
+		<li>control flow</li>
+		<li>local static variables</li>
+		<li>operators and expressions</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('1g.c');">[show solution]</a>
+		<a href="1g.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-1g.c"></textarea></p>
+	</p>
+	<hr>
+
+	<h2>Set #2 - Nov 25, 2022</h2>
+	<p>2a: Write a header file named shapes.h that contains multiple structs we'll be using in other exercises for this set. It should contain the type definitions for point and rectangle structs. Be sure to include a header guard!</p>
+	<ul>
+		<li>header files</li>
+		<li>typedef</li>
+		<li>struct</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('shapes.h');">[show solution]</a>
+		<a href="shapes.h">[download shapes.h]</a>
+		<p><textarea spellcheck="false" id="cgde-shapes.h"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2b: Write a function that takes a pointer to an int as a parameter and changes the value that the pointer points to to 5. Test its functionality by printing out some values.</p>
+	<ul>
+		<li>functions</li>
+		<li>pointers</li>
+		<li>printf</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2b.c');">[show solution]</a>
+		<a href="2b.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2b.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2c - Write a function that takes a void pointer as a parameter and prints out its memory address. Test its functionality by printing out some values. Remember that %p is the conversion specification for pointers.</p>
+	<ul>
+		<li>pointers</li>
+		<li>void pointers</li>
+		<li>functions</li>
+		<li>printf</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2c.c');">[show solution]</a>
+		<a href="2c.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2c.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2d - Write a function that takes a pointer to a rectangle struct as a parameter and prints out all of its member variables (variables inside the struct). To get the type definition for rectangles, make sure you #include the header file shapes.h which we made in exercise 2a. Also, check 2a's solution to make sure shapes.h is correct at this point.</p>
+	<ul>
+		<li>pointers</li>
+		<li>struct</li>
+		<li>printf</li>
+		<li>functions</li>
+		<li>header files</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2d.c');">[show solution]</a>
+		<a href="2d.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2d.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2e: Write a function that takes a pointer to a rectangle struct as a parameter and returns its area.</p>
+	<ul>
+		<li>pointers</li>
+		<li>struct</li>
+		<li>printf</li>
+		<li>functions</li>
+		<li>header files</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2e.c');">[show solution]</a>
+		<a href="2e.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2e.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2f: Let's test out math.h from the C standard library. To use it, you must #include &lt;math.h&gt; in your source file and append "-lm" to your compile command to link it to the math library. Use the sqrt() function from math.h to compute the square root of a number, and then print it out.</p>
+	<p>For more info on math.h and other standard library headers, check out <a href="https://en.cppreference.com/w/c/numeric/math">cppreference.com</a>.</p>
+	<ul>
+		<li>header files</li>
+		<li>linking</li>
+		<li>printf</li>
+		<li>math.h</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2f.c');">[show solution]</a>
+		<a href="2f.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2f.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2g: Write a function that returns the distance between two points. It should take two pointers to point structs as parameters and return a double. Test it by printing out some values. Remember to #include shapes.h from exercise 2a to get the type definition for point structs.</p>
+	<ul>
+		<li>printf</li>
+		<li>pointers</li>
+		<li>functions</li>
+		<li>header files</li>
+		<li>struct</li>
+		<li>math.h</li>
+		<li>linking</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2g.c');">[show solution]</a>
+		<a href="2g.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2g.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2h: Write a program that prints out a char variable in the terminal using a pointer to that char. Then, it should move through memory using the pointer and print all of the characters it finds until it reaches a segfault. Hint: adding +1 to a char pointer will increase its memory address by 1.</p>
+	<ul>
+		<li>pointers</li>
+		<li>printf</li>
+		<li>control flow</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2h.c');">[show solution]</a>
+		<a href="2h.c">[download source file]</a>
+		<p><textarea spellcheck="false" id="cgde-2h.c"></textarea></p>
+	</p>
+	<hr>
+
+	<p>2i: This exercise should help you practice using multiple c source files for a single program.</p>
+	<p>Combine the definitions of functions from exercises 2d, 2e, and 2g into a source file named shape_functions.c. Then, combine their function prototypes into a header file named shape_functions.h.</p>
+	<p>Finally, create a source file with a main function that utilizes all of these functions, named 2i.c. Compile your program by writing all of the source file names it uses in your compile command.</p>
+	<ul>
+		<li>header files</li>
+		<li>functions</li>
+		<li>function prototypes</li>
+		<li>linking</li>
+		<li>math.h</li>
+	</ul>
+	<p>
+		<a href="javascript:showSolution('2i.c');">[show 2i.c]</a>
+		<a href="javascript:showSolution('shape_functions.h');">[show shape_functions.h]</a>
+		<a href="javascript:showSolution('shape_functions.c');">[show shape_functions.c]</a>
+		<a href="2i.c">[download 2i.c]</a>
+		<a href="shape_functions.h">[download shape_functions.h]</a>
+		<a href="shape_functions.c">[download shape_functions.c]</a>
+		<p><textarea spellcheck="false" id="cgde-2i.c"></textarea></p>
+		<p><textarea spellcheck="false" id="cgde-shape_functions.h"></textarea></p>
+		<p><textarea spellcheck="false" id="cgde-shape_functions.c"></textarea></p>
+	</p>
+	<hr>
+
 	<script src="../../script.js"></script>
-<script>
-// Shows the solution to an exercise by setting the text of the exercise's source file to the exercise's matching textarea value
-function showSolution(id)
-{
-	// Get textarea to show code in
-	var eCode = document.getElementById('cgde-' + id);
-	if (eCode.style.display != 'block')
+	<script>
+	// Shows the solution to an exercise by setting the text of the exercise's source file to the exercise's matching textarea value
+	function showSolution(id)
 	{
-		eCode.style.display = 'block';
-		var client = new XMLHttpRequest();
-		client.open('GET', id);
-		client.onreadystatechange = function() {
-			eCode.value = this.responseText;
+		// Get textarea to show code in
+		var eCode = document.getElementById('cgde-' + id);
+		if (eCode.style.display != 'block')
+		{
+			eCode.style.display = 'block';
+			var client = new XMLHttpRequest();
+			client.open('GET', id);
+			client.onreadystatechange = function() {
+				eCode.value = this.responseText;
+			}
+			client.send();
 		}
-		client.send();
+		else
+			eCode.style.display = 'none';
 	}
-	else
-		eCode.style.display = 'none';
-}
-</script>
+	</script>
 </body>
 </html>

@@ -60,7 +60,7 @@ if (initialFooter == null)
 {
 	// If no footer was created in the initial HTML, use the default footer
 	document.getElementById('footer').innerHTML = `
-		<img src="img/misc/stick.gif">
+		<img src="/img/misc/stick.gif">
 	`;
 }
 else
@@ -85,9 +85,9 @@ var navHTML = `
 	<br>
 	<li><a href='/cgd/index.html'>C/C++ Game Dev</a></li>
 	<ul>
-		<li><a href='/cgd/topics.html'>topics</a></li>
-		<li><a href='/cgd/notes.html'>notes</a></li>
-		<li><a href='/cgd/exercises/index.html'>exercises</a></li>
+		<li><a href='/cgd/topics.html'>Topics</a></li>
+		<li><a href='/cgd/notes.html'>Notes</a></li>
+		<li><a href='/cgd/exercises/Index.html'>exercises</a></li>
 	</ul>
 </ul>
 `;

@@ -87,7 +87,7 @@ var navHTML = `
 	<ul>
 		<li><a href='/cgd/topics.html'>Topics</a></li>
 		<li><a href='/cgd/notes.html'>Notes</a></li>
-		<li><a href='/cgd/exercises/Index.html'>exercises</a></li>
+		<li><a href='/cgd/exercises/index.html'>Exercises</a></li>
 	</ul>
 </ul>
 `;

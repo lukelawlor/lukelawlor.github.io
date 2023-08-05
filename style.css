@@ -91,7 +91,7 @@ td{
 #directory{
 	color: var(--col-blue);
 	padding-top: 4px;
-	overflow: scroll;
+	overflow: hidden;
 }
 #td-navmenu{
 	border-right: 22px solid transparent;

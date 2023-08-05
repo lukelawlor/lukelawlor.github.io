@@ -83,7 +83,7 @@ var navHTML = `
 		<li><a href='/projects/ccdemo.html'>ccdemo</a></li>
 	</ul>
 	<br>
-	<li><a href='/cgd/index.html'>C/C++ Game Dev</a></li>
+	<li><a href='/cgd/index.html'>C Game Dev</a></li>
 	<ul>
 		<li><a href='/cgd/topics.html'>Topics</a></li>
 		<li><a href='/cgd/notes.html'>Notes</a></li>

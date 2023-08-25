@@ -1,9 +1,0 @@
-.topics ul{
-	padding-bottom: 20px;
-}
-.topics b{
-	font-family: 'Courier';
-	float: right;
-	color: var(--col-orange);
-	font-weight: normal;
-}

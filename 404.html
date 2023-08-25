@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<link rel="icon" href="/img/misc/favicon.png">
-	<link rel="stylesheet" href="/style.css">
-	<title>Luke Lawlor's 404</title>
-</head>
-<body>
-	<p>404 Error</p>
-	<p>The page you requested could not be found.</p>
-
-	<script src="/script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="/favicon.png">
+		<link rel="stylesheet" href="/style.css">
+		<title>Luke Lawlor's Site Redirect</title>
+	</head>
+	<body>
+		<p>My site has moved to Codeberg Pages.</p>
+		<p>
+			If JavaScript is enabled, you should be redirected to it automatically in 15 seconds. 
+			If not,
+			<a href="https://lukelawlor.codeberg.page">click here to visit it</a>.
+		</p>
+		<p>
+			The URL you are being redirected to is: 
+			<a id="redirect-elem"></a>
+		</p>
+		<script type="text/javascript" src="redirect.js"></script>
+	</body>
 </html>

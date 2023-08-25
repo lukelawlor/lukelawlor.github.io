@@ -17,11 +17,12 @@ var redirect_url;
 switch (page_path)
 {
 // Handle old project page URLs
-case 'projects/sortstudycli.html': redirect_url = 'https://lukelawlor.codeberg.page/software/sortstudycli.html'; break;
-case 'projects/roguelike.html':    redirect_url = 'https://github.com/lukelawlor/roguelike'; break;
-case 'projects/soupdl.html':       redirect_url = 'https://lukelawlor.codeberg.page/software/soupdl/index.html'; break;
-case 'projects/asteroids.html':    redirect_url = 'https://lukelawlor.codeberg.page/software/asteroids/index.html'; break;
-case 'projects/ccdemo.html':       redirect_url = 'https://github.com/lukelawlor/demos'; break;
+case 'projects/': case 'projects/index.html': redirect_url = 'https://lukelawlor.codeberg.page/software/index.html'; break;
+case 'projects/sortstudycli.html':            redirect_url = 'https://lukelawlor.codeberg.page/software/sortstudycli.html'; break;
+case 'projects/roguelike.html':               redirect_url = 'https://github.com/lukelawlor/roguelike'; break;
+case 'projects/soupdl.html':                  redirect_url = 'https://lukelawlor.codeberg.page/software/soupdl/index.html'; break;
+case 'projects/asteroids.html':               redirect_url = 'https://lukelawlor.codeberg.page/software/asteroids/index.html'; break;
+case 'projects/ccdemo.html':                  redirect_url = 'https://github.com/lukelawlor/demos'; break;
 
 // By default, redirect to the new site + page_path
 default:
